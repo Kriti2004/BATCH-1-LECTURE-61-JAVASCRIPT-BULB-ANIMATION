@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BATCH-1 LECTURE-61 JAVASCRIPT BULB ANIMATION</title>
+        <style>
+            .box1{
+                text-align: center;
+                margin: 200px;
+            }
+        </style>
+        <script src="./js/script.js"></script>
+        <script>
+            // Function Defination
+            function clickMe(state){ // state is a formal arguement
+               // alert("ok");
+               // object.member.member
+               //alert(state);
+                    if(state == 'on'){
+                        document.body.style.backgroundColor='yellow';
+                        document.getElementById('img').setAttribute('src','./img/2.png.png')
+                    }else{
+                        document.body.style.backgroundColor='black';
+                        document.getElementById('img').setAttribute('src','./img/1.png.png')
+
+                    }
+               
+                }
+        </script>
+    </head>
+    <body>
+            <div class="box1">
+                <img id="img"  height="252px" src="./img/1.png.png">
+                <button onclick="clickMe('on')">ON</button>
+                <button onclick="clickMe('off')">OFF</button>
+            </div>
+
+        <script>
+
+        </script>
+    </body>
+</html>
